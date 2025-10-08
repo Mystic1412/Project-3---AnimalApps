@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".MainActivity">
+
+    <!-- Profile name -->
+
+    <!-- Subname -->
+
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="mystickliph_foodedition"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Description -->
+
+    <!-- Stats -->
+
+    <!-- Profile picture -->
+
+    <!-- Edit Profile buttons -->
+
+    <!-- Category buttons -->
+
+    <TextView
+        android:id="@+id/textViewMystic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
+        android:text="Mystic"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/textViewUsername"
+        app:layout_constraintTop_toBottomOf="@id/textViewUsername" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:text="Description about yourself"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/textViewMystic"
+        app:layout_constraintTop_toBottomOf="@id/textViewMystic" />
+
+    <TextView
+        android:id="@+id/textViewStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="84dp"
+        android:text="6        17        1\n          posts  followers  following"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewMystic" />
+
+    <ImageView
+        android:id="@+id/catImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Profile picture"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewUsername" />
+
+    <Button
+        android:id="@+id/btnEditProfileRight"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/black"
+        android:text="Edit Profile"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnEditProfileLeft" />
+
+    <ImageView
+        android:id="@+id/square4"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/blank_square"
+        app:layout_constraintStart_toStartOf="@id/square1"
+        app:layout_constraintTop_toBottomOf="@id/square1" />
+
+    <ImageView
+        android:id="@+id/square1"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/blank_square"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPost" />
+
+    <Button
+        android:id="@+id/btnEditProfileLeft"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/black"
+        android:text="Edit Profile"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewDescription" />
+
+    <ImageView
+        android:id="@+id/square2"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/blank_square"
+        app:layout_constraintStart_toEndOf="@id/square1"
+        app:layout_constraintTop_toTopOf="@id/square1" />
+
+    <ImageView
+        android:id="@+id/square6"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blank_square"
+        app:layout_constraintStart_toEndOf="@id/square5"
+        app:layout_constraintTop_toTopOf="@id/square4" />
+
+    <Button
+        android:id="@+id/btnTag"
+        android:layout_width="70dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/white"
+        android:text="Tag"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/btnReel"
+        app:layout_constraintTop_toTopOf="@id/btnPost" />
+
+    <ImageView
+        android:id="@+id/square3"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/blank_square"
+        app:layout_constraintStart_toEndOf="@id/square2"
+        app:layout_constraintTop_toTopOf="@id/square1" />
+
+    <Button
+        android:id="@+id/btnReel"
+        android:layout_width="70dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/white"
+        android:text="Reel"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@id/btnPost"
+        app:layout_constraintTop_toTopOf="@id/btnPost" />
+
+    <ImageView
+        android:id="@+id/square5"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blank_square"
+        app:layout_constraintStart_toEndOf="@id/square4"
+        app:layout_constraintTop_toTopOf="@id/square4" />
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="70dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/white"
+        android:text="Post"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@id/btnEditProfileLeft"
+        app:layout_constraintTop_toBottomOf="@id/btnEditProfileLeft" />
+
+    <!-- Grid of blank squares -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
